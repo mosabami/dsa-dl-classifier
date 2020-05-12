@@ -30,8 +30,8 @@ keras.backend.clear_session()
 
 # A welcome message to test our server
 @app.route('/')
-def index():
-    return "<h1>Welcome to our server !!</h1>"
+    return """<h1>Welcome to our deep learning classification webapp !!</h1> 
+    <p>go to <a href="/apidocs">app page<a> to access the app<p>"""
 
 @app.route('/makepredict', methods=['POST'])
 def predict_digit():
